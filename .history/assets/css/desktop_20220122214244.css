@@ -1,0 +1,192 @@
+/**
+ * /* 
+ *
+ * @format
+ */
+
+/* ========responsive for desktop */
+
+@media screen and (min-width: 992px) {
+	#header {
+		background-color: #fff;
+		box-shadow: 0 0 10px gray;
+	}
+
+	#header .nav-item {
+		width: 100px;
+		transition: all 1s;
+	}
+
+	#header .nav-item:hover {
+		background-color: #282830;
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+
+	#header .nav-item:hover a {
+		color: #fff;
+	}
+
+	.nav-bar {
+		padding: 0 50px;
+	}
+
+	.left-col {
+		justify-content: flex-start;
+	}
+
+	.right-col {
+		justify-content: flex-end;
+	}
+
+	.ml {
+		margin-left: 18px;
+	}
+
+	.mr {
+		margin-right: 18px;
+	}
+
+	.nav-bar a {
+		color: #000;
+	}
+
+	/* to define collumn for webpage in case user's resolution is desktop */
+
+	.col-desktop-1 {
+		width: 8.33%;
+	}
+	.col-desktop-2 {
+		width: 16.66%;
+	}
+	.col-desktop-3 {
+		width: 25%;
+	}
+	.col-desktop-4 {
+		width: 33.33%;
+		padding: 0 16px;
+	}
+	.col-desktop-5 {
+		width: 41.66%;
+	}
+	.col-desktop-6 {
+		width: 50%;
+	}
+	.col-desktop-7 {
+		width: 58.33%;
+	}
+	.col-desktop-8 {
+		width: 66.66%;
+	}
+	.col-desktop-9 {
+		width: 75%;
+	}
+	.col-desktop-10 {
+		width: 83.33%;
+	}
+	.col-desktop-11 {
+		width: 91.66%;
+	}
+	.col-desktop-12 {
+		width: 100%;
+	}
+
+	#main {
+		margin-top: -32px;
+	}
+
+	/* to keep the background image to be orinal scale,that makes background's quality is best,we will not set the height for background of banner(width is 100% by default), we use a trick that is padding-top value will always relates to the width, so in these codes, we set the 
+	percentage value for padding-top, this will be relative to it's width's value*/
+
+	#banner {
+		padding-top: 39.123607%;
+		background: url(../img/banner/banner.png) top center / cover no-repeat;
+		background-origin: border-box;
+		border: none;
+	}
+
+	/* set the content inside of banner to be absolute to make them relative to it's parent,the banner */
+
+	.banner-wrapper {
+		position: absolute;
+		top: 160px;
+		left: 56px;
+	}
+
+	#banner > * {
+		font-family: Georgia, "Times New Roman", Times, serif;
+	}
+
+	#banner .content-heading {
+		font-size: 28px;
+	}
+
+	#banner .content-desc {
+		font-size: 24px;
+	}
+
+	.white-text {
+		color: #fff;
+	}
+
+	#section,
+	#img-list {
+		background-color: #e7e7e7;
+		background-clip: border-box;
+	}
+
+	#section {
+		margin-top: 0;
+	}
+
+	/* to set the height of the img-list item to be equal to it's tallest child*/
+
+	#img-list .img-list-wrapper {
+		margin-left: -16px;
+		margin-right: -16px;
+		display: flex;
+		width: 100%;
+		height: auto;
+		align-items: stretch;
+	}
+
+	/* to set each img-block to be flex and it flex to collumn direction and it's children will be in place of  top and bottom */
+	.image-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#img-list img {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	#section,
+	#img-list {
+		padding: 32px;
+		height: auto;
+	}
+
+	.footer-wrapper {
+		padding: 40px 32px 80px 32px;
+		background-color: #ccc;
+	}
+
+	#footer h3 {
+		font-size: 28px;
+	}
+
+	#footer h3,
+	p,
+	a {
+		padding: 12px 0px;
+	}
+
+	#footer p {
+		line-height: 24px;
+	}
+	#footer a {
+		color: #1dabb8;
+	}
+}

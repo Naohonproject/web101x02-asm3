@@ -1,0 +1,191 @@
+/** @format */
+
+/* =====Flow the rule: Mobile first */
+
+/* ======start to make web stite with moblile interface */
+
+/* margin left 10 */
+.ml {
+	margin-left: 10px;
+}
+/* margin right 10 */
+.mr {
+	margin-right: 10px;
+}
+
+/* defiding the row , that will contains the collunms that will divide the layout into the number of box, flex-direction is used to set the direction of the children to be flexed,flex-wrap tells browser how to react when not enough space to set children in one line*/
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* to set the default children as 100% of parent's width  */
+.row > * {
+	width: 100%;
+	max-width: 100%;
+	flex-shrink: 0;
+}
+
+/* =====set the mobile grid collunm */
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
+}
+
+/* styling header's website that fixed the header on the top of the page, and upper of every layer in the page */
+#header {
+	width: 100%;
+	height: 80px;
+	background-color: #60646d;
+	background-clip: border-box;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+/* styling navigation for the page */
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 20px;
+}
+
+/* styling and add the animation for each note in navigation bar */
+
+#header .nav-item {
+	width: 80px;
+	height: 80px;
+	padding: 32px 0;
+	text-align: center;
+	transition: all 1s;
+}
+
+/* defining how the each of navigation item how to react when user's cursor hover over */
+#header .nav-item:hover {
+	background-color: #f7e999;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+/* to define position of navigation's group , this is left group , that has 2 chirdren so, it will grow in 2/5 of available sapce in navigation bar* */
+.left-col {
+	display: flex;
+	flex: 2;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* to define position of navigation's group , this is right group, that has 3 chirdren so, it will grow in 3/5 of available sapce in navigation bar*/
+.right-col {
+	display: flex;
+	flex: 3;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* because header position is set to fixed ,so that it's floating out of the nomal flow of webpage,then the next one will takes place.We needs to set margin top for the next one(main) to pull them down a distance equal to the height of header to avoid header overlaps it. */
+
+#main {
+	margin-top: 80px;
+}
+
+/* to set the negative space for the content of the website*/
+#main,
+#footer {
+	padding: 32px;
+}
+
+/* styling the banner and set it's position to relative to then be able to set it's children to absolute position*/
+#banner {
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/* use attribute selector to style the element, this code will take all the element whose owns the class with the content inside of "" within */
+
+div[class*="-heading"] {
+	padding-top: 36px;
+}
+
+div[class*="-desc"] {
+	margin-top: 16px;
+}
+
+/* to set margin top for section div to be 42px */
+#section {
+	margin-top: 42px;
+}
+
+#img-list {
+	width: 100%;
+}
+
+.img-list-wrapper {
+	padding: 24px 0;
+	margin: 0 auto;
+}
+
+/* to set width for all image inside of div with id = "img-list, by default images not fit to their parent's width*/
+#img-list img {
+	width: 100%;
+	margin-top: 56px;
+}
+
+/* to define padding for each of footer block*/
+.footer-block {
+	padding: 24px 0;
+}
+
+/* to set padding for all the element that is children of footer block*/
+
+.footer-block > * {
+	padding: 16px 0;
+}
+
+#footer a {
+	color: #2cc990;
+	text-decoration: underline;
+}

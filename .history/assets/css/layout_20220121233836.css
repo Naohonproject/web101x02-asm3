@@ -1,0 +1,31 @@
+/** @format */
+
+#header {
+	width: 100vw;
+	height: 60px;
+	background-color: #a1a1a1;
+	background-clip: border-box;
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	align-items: center;
+}
+
+.left-col {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.right-col {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}

@@ -1,0 +1,62 @@
+/** @format */
+
+/* ========responsive for tablet */
+
+@media screen and (min-width: 768px) {
+	#header {
+		background-color: #aab69b;
+	}
+
+	.nav-bar {
+		padding: 0 28px;
+	}
+
+	.left-col {
+		justify-content: flex-start;
+	}
+
+	.right-col {
+		justify-content: flex-end;
+	}
+
+	.ml {
+		margin-left: 14px;
+	}
+
+	.mr {
+		margin-right: 14px;
+	}
+}
+
+/* ========responsive for desktop */
+
+@media screen and (min-width: 992px) {
+	#header {
+		background-color: #fff;
+		box-shadow: 0 0 10px gray;
+	}
+
+	.nav-bar {
+		padding: 0 50px;
+	}
+
+	.left-col {
+		justify-content: flex-start;
+	}
+
+	.right-col {
+		justify-content: flex-end;
+	}
+
+	.ml {
+		margin-left: 18px;
+	}
+
+	.mr {
+		margin-right: 18px;
+	}
+
+	.nav-bar a {
+		color: #000;
+	}
+}

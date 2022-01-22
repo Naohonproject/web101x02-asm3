@@ -1,0 +1,22 @@
+/** @format */
+
+@media screen and (min-width: 768px) {
+	#header {
+		background-color: #aab69b;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#header {
+		background-color: #fff;
+	}
+
+	.nav-bar {
+		justify-content: space-around;
+		padding: 0 50px;
+	}
+
+	.nav-bar a {
+		color: #000;
+	}
+}

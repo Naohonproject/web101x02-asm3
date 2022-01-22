@@ -1,0 +1,117 @@
+/**
+ * /*
+ *
+ * @format
+ */
+
+/* ========responsive for tablet============== */
+
+@media screen and (min-width: 768px) {
+	#header {
+		background-color: #60646d;
+	}
+
+	.nav-bar {
+		padding: 0 28px;
+	}
+
+	#header .nav-item {
+		width: 80px;
+		transition: all 1s;
+	}
+
+	#header .nav-item:hover {
+		background-color: #27ae60;
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+
+	.left-col {
+		justify-content: flex-start;
+	}
+
+	.right-col {
+		justify-content: flex-end;
+	}
+
+	.ml {
+		margin-left: 14px;
+	}
+
+	.mr {
+		margin-right: 14px;
+	}
+
+	.img-list-wrapper {
+		margin: 0 -24px;
+	}
+
+	/* define collumn for the page in case resolution of tablet */
+
+	.col-tablet-1 {
+		width: 8.33%;
+	}
+	.col-tablet-2 {
+		width: 16.66%;
+	}
+	.col-tablet-3 {
+		width: 25%;
+	}
+	.col-tablet-4 {
+		width: 33.33%;
+	}
+	.col-tablet-5 {
+		width: 41.66%;
+	}
+	.col-tablet-6 {
+		width: 50%;
+		padding: 0 24px;
+	}
+	.col-tablet-7 {
+		width: 58.33%;
+	}
+	.col-tablet-8 {
+		width: 66.66%;
+	}
+	.col-tablet-9 {
+		width: 75%;
+	}
+	.col-tablet-10 {
+		width: 83.33%;
+	}
+	.col-tablet-11 {
+		width: 91.66%;
+	}
+	.col-tablet-12 {
+		width: 100%;
+	}
+
+	#footer p {
+		padding-top: 0;
+	}
+
+	#main {
+		padding-bottom: 0;
+	}
+
+	#footer {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.footer-block {
+		margin-top: 32px;
+	}
+
+	#banner {
+		border-bottom: 1px solid #d4d4d4;
+	}
+
+	div[class*="-desc"] {
+		padding-bottom: 32px;
+	}
+
+	#img-list {
+		margin-top: -56px;
+	}
+}
