@@ -1,0 +1,74 @@
+/** @format */
+
+.container {
+	background-color: #f0f2f5;
+	height: 100vh;
+	margin: 0;
+}
+.form-wrapper {
+	width: 500px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	top: 200px;
+	background-color: #f6f7f2;
+	border-radius: 8px;
+	padding: 10px 0px 24px;
+}
+
+.form .logo {
+	padding: 20px 40px;
+	margin-bottom: 16px;
+}
+.form .input {
+	padding: 8px 24px;
+	margin-bottom: 24px;
+}
+padding: 18px 72px;
+
+.form .user-input {
+}
+
+.form .user-input label {
+	display: inline-block;
+	float: left;
+}
+
+.form .user-input input {
+	display: block;
+	float: right;
+}
+
+.btn-block .btn {
+	padding: 5px 0;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+.btn-block .btn button {
+	font-size: 20px;
+	display: inline-block;
+	width: 400px;
+	height: 36px;
+	background-color: #1877f2;
+	border-radius: 8px;
+	border: solid 1px #ccc;
+}
+
+.btn-block a {
+	font-size: 12px;
+}
+
+.btn-block .forgotten {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 16px;
+}
+
+.btn-block .Create-acc {
+	background-color: #92f22a;
+	background-clip: padding-box;
+	padding: 10px 56px;
+	border-radius: 8px;
+	margin-bottom: 40px;
+}
